@@ -7,6 +7,52 @@ Specifically with credit risk the main challenge comes from having a very small 
 
 ## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
+### RandomOverSampler
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
 
+* A
+* B
+* C
+
+### SMOTE
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
+
+* A
+* B
+* C
+
+### ClusterCentroids
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
+
+* A
+* B
+* C
+
+### SMOTEENN
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
+
+* A
+* B
+* C
+
+### BalancedRandomForest
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
+
+* A
+* B
+* C
+
+### EasyEnsemble
+Balanced accuracy score
+Confusion matrix and imbalanced classification report
+
+* A
+* B
+* C
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
