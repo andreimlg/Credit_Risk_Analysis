@@ -8,54 +8,48 @@ Specifically with credit risk the main challenge comes from having a very small 
 ## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
 ### RandomOverSampler
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![RandomOverSampler](https://user-images.githubusercontent.com/31755703/169526549-0019f8be-1f0a-4573-98b3-287ff8c337a7.PNG)
 
 * A
 * B
 * C
 
 ### SMOTE
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![SMOTE](https://user-images.githubusercontent.com/31755703/169526567-2331d427-0eb1-479e-b886-4618217ca24e.PNG)
 
 * A
 * B
 * C
 
 ### ClusterCentroids
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![ClusterCentroids](https://user-images.githubusercontent.com/31755703/169526583-9ff8b0c4-9501-4a87-9f3e-a8f97df95da2.PNG)
 
 * A
 * B
 * C
 
 ### SMOTEENN
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![SMOTEENN](https://user-images.githubusercontent.com/31755703/169526595-95731b07-81ed-443a-9eb4-3c72c0cb7e98.PNG)
 
 * A
 * B
 * C
 
 ### BalancedRandomForest
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![RandonForest](https://user-images.githubusercontent.com/31755703/169526803-3f75fbee-7769-4eeb-8805-6c80bda0bdeb.PNG)
 
 * A
 * B
 * C
 
-### EasyEnsemble
-Balanced accuracy score
-
-Confusion matrix and imbalanced classification report
+### EasyEnsemble AdaBoost
+Balanced accuracy score & Confusion matrix and imbalanced classification report
+![EasyEnsemble](https://user-images.githubusercontent.com/31755703/169526785-e446e674-3097-47fb-a875-a3a7aa0b3877.PNG)
 
 * A
 * B
