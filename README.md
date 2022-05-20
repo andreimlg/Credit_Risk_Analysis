@@ -9,22 +9,21 @@ Specifically with credit risk the main challenge comes from having a very small 
 
 ### RandomOverSampler
 Balanced accuracy score & Confusion matrix and imbalanced classification report
+* As we were expecting, in a fraud detection machine learning model, the main challenge is that positives (high risk) are much smaller than negatives. Using RandomOverSampler to diminish this effect we got the following results:
 ![RandomOverSampler](https://user-images.githubusercontent.com/31755703/169526549-0019f8be-1f0a-4573-98b3-287ff8c337a7.PNG)
 
-* As we were expecting, in a fraud detection machine learning model, the main challenge is that positives (high risk) are much smaller than negatives. Using RandomOverSampler to diminish this effect we got the following results:
-* Balance accuracy score is 62% which means the model will be right 62% of the time.
-* As per the confusion matrix we notice that despite the detection of actually fraud cases we are still missing high risk loans, as well as we are missing low risk loans because we are detecting them as High Risk and this could impact profitability letting go potential low risk clients.
+* Balance accuracy score is 62% which means the model will be right 62% of the time. As per the confusion matrix we notice that despite the detection of actually fraud cases we are still missing high risk loans, as well as we are missing low risk loans because we are detecting them as High Risk and this could impact profitability letting go potential low risk clients.
 
 * Precision score: How likely is it that the loan will be high risk? With such a low value we can't be sure.
-* Precision = TP/(TP + FP):
-* 52/(52+5952) = 0.01
+Precision = TP/(TP + FP):
+52/(52+5952) = 0.01
 
 * Recall (Sensitivity) score : We know it is a High Risk, how likely is that the model will predict it? It is also a low value considering that almost have of the high risk loans will go undetected.
-* Sensitivity = TP/(TP + FN):
-* 52/(52 + 35) = 0.60
+Sensitivity = TP/(TP + FN):
+52/(52 + 35) = 0.60
 
 * F1 Score: There is a pronounced imbalance between sensitivity and precision resulting in a low F1 Score. This is not a useful algorithm.
-* 2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
 
 
 ### SMOTE
