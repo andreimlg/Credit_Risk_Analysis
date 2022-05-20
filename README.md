@@ -9,6 +9,7 @@ Specifically with credit risk the main challenge comes from having a very small 
 
 ### RandomOverSampler
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
@@ -17,6 +18,7 @@ Confusion matrix and imbalanced classification report
 
 ### SMOTE
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
@@ -25,6 +27,7 @@ Confusion matrix and imbalanced classification report
 
 ### ClusterCentroids
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
@@ -33,6 +36,7 @@ Confusion matrix and imbalanced classification report
 
 ### SMOTEENN
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
@@ -41,6 +45,7 @@ Confusion matrix and imbalanced classification report
 
 ### BalancedRandomForest
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
@@ -49,6 +54,7 @@ Confusion matrix and imbalanced classification report
 
 ### EasyEnsemble
 Balanced accuracy score
+
 Confusion matrix and imbalanced classification report
 
 * A
