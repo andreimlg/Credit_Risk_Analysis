@@ -51,14 +51,14 @@ Using ClusterCentroids we did't get better results which reminds us that while r
 
 * Precision score: 
 Precision = TP/(TP + FP):
-56/(56+5840) = 0.01
+52/(52+9683) = 0.005
 
 * Recall (Sensitivity) score : 
 Sensitivity = TP/(TP + FN):
-56/(56 + 31) = 0.64
+52/(52 + 35) = 0.598
 
 * F1 Score: 
-2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.011
 
 ### SMOTEENN
 Balanced accuracy score & Confusion matrix and imbalanced classification report
