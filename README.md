@@ -35,22 +35,30 @@ Balanced accuracy score & Confusion matrix and imbalanced classification report
 * After running the model, we have a higher Balance accuracy score of 65%. This increase helps but we are still far away from the performance we would like to have. Therefore the values of Precision, Recall and F1 Score are similar.
 * Precision score: 
 Precision = TP/(TP + FP):
-52/(52+5952) = 0.01
+56/(56+5840) = 0.01
 
 * Recall (Sensitivity) score : 
 Sensitivity = TP/(TP + FN):
-52/(52 + 35) = 0.60
+56/(56 + 31) = 0.64
 
 * F1 Score: 
 2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
 
 ### ClusterCentroids
-Balanced accuracy score & Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report.
+Using ClusterCentroids we did't get better results which reminds us that while resampling can attempt to address imbalance, it does not guarantee better results.
 ![ClusterCentroids](https://user-images.githubusercontent.com/31755703/169526583-9ff8b0c4-9501-4a87-9f3e-a8f97df95da2.PNG)
 
-* A
-* B
-* C
+* Precision score: 
+Precision = TP/(TP + FP):
+56/(56+5840) = 0.01
+
+* Recall (Sensitivity) score : 
+Sensitivity = TP/(TP + FN):
+56/(56 + 31) = 0.64
+
+* F1 Score: 
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
 
 ### SMOTEENN
 Balanced accuracy score & Confusion matrix and imbalanced classification report
