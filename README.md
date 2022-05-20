@@ -28,11 +28,21 @@ Sensitivity = TP/(TP + FN):
 
 ### SMOTE
 Balanced accuracy score & Confusion matrix and imbalanced classification report
+* In SMOTE we need to remember how the minority is increased, and this is by interpolating new values.
+
 ![SMOTE](https://user-images.githubusercontent.com/31755703/169526567-2331d427-0eb1-479e-b886-4618217ca24e.PNG)
 
-* A
-* B
-* C
+* After running the model, we have a higher Balance accuracy score of 65%. This increase helps but we are still far away from the performance we would like to have. Therefore the values of Precision, Recall and F1 Score are similar.
+* Precision score: 
+Precision = TP/(TP + FP):
+52/(52+5952) = 0.01
+
+* Recall (Sensitivity) score : 
+Sensitivity = TP/(TP + FN):
+52/(52 + 35) = 0.60
+
+* F1 Score: 
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.02
 
 ### ClusterCentroids
 Balanced accuracy score & Confusion matrix and imbalanced classification report
