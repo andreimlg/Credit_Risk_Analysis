@@ -61,27 +61,65 @@ Sensitivity = TP/(TP + FN):
 2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.011
 
 ### SMOTEENN
-Balanced accuracy score & Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report. In contrast with SMOTE (Considering that the new data can be influenced by outliers) SMOTEENN results as a combination of undersampling and oversampling looking to have less noise in the data. 
 ![SMOTEENN](https://user-images.githubusercontent.com/31755703/169526595-95731b07-81ed-443a-9eb4-3c72c0cb7e98.PNG)
 
-* A
-* B
-* C
+* Precision score: 
+Precision = TP/(TP + FP):
+61/(61+7294) = 0.008
+
+* Recall (Sensitivity) score : 
+Sensitivity = TP/(TP + FN):
+61/(61 + 26) = 0.701
+
+* F1 Score: 
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.016
+
+Small improvements in a model might not appear as appealing but when we are looking at thousands of rows and potential customers every improvement can mean a lot to the business. In this case sensitivity was improved.
 
 ### BalancedRandomForest
-Balanced accuracy score & Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report.
+Let's keep in mind, the objective of random forest is to provide multiple models so the performance of the whole model improves by reducing variance and improving accuracy and robustness.
 ![RandonForest](https://user-images.githubusercontent.com/31755703/169526803-3f75fbee-7769-4eeb-8805-6c80bda0bdeb.PNG)
 
-* A
-* B
-* C
+* Precision score: 
+Precision = TP/(TP + FP):
+71/(71+2153) = 0.032
+
+* Recall (Sensitivity) score : 
+Sensitivity = TP/(TP + FN):
+71/(71 + 30) = 0.703
+
+* F1 Score: 
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.061
+
+So far this is the highest value for precision. This can be observed directly in the confusion matrix where the number of high risk is lower but we are catching more TP's. Also the highest score for Sensitivity. BalancedRandomForest seems like the correct path to follow.
 
 ### EasyEnsemble AdaBoost
-Balanced accuracy score & Confusion matrix and imbalanced classification report
+Balanced accuracy score & Confusion matrix and imbalanced classification report.
+AdaBoost runs under the concept of evaluating the errors so they can be minimized in subsequent models.
+
 ![EasyEnsemble](https://user-images.githubusercontent.com/31755703/169526785-e446e674-3097-47fb-a875-a3a7aa0b3877.PNG)
 
-* A
-* B
-* C
+* Precision score: 
+Precision = TP/(TP + FP):
+93/(93+983) = 0.086
+
+* Recall (Sensitivity) score : 
+Sensitivity = TP/(TP + FN):
+93/(93 + 8) = 0.921
+
+* F1 Score: 
+2(Precision * Sensitivity)/(Precision + Sensitivity) = 0.158
+
+All of the models run in this analysis EasyEnsemble Adaboost has the best performance overall. As per the confusion matrix, we are almost catching all of the high risk cases without loosing potential customers by identifying them as high risk when they're not.
+
+Basically this model learns from the mistakes of previous models so at the end all the models run contribute to the final result.
+<img width="664" alt="ensembleada" src="https://user-images.githubusercontent.com/31755703/169627927-591fd17c-faa4-4a62-b204-a3bf2a3ae3ed.PNG">
+
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+Depending on the use of case, a model may be a right solution for a specific situation and might not be the best in a different context, we need to consider the context as well as the quality of the data in the process of choosing which model we'll be using to perform Machine Learning.
+
+There was no better way to explain the differences between all of them than by comparing the same data between different models. From the knowledge acquired in this module as long as we get more information and feedback we'll have better results such were the last 2 examples performed with Ensemble Learning. The power of this models is limitless and can help different industries in the modern world.
